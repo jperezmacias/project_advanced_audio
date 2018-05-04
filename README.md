@@ -30,7 +30,12 @@ plots the positions of the microphone and the test file.
 
 ## Data
 
+http://www.cs.tut.fi/~perezmac/sound_localization.html
+
+
+
 - video3i: recorded with MPP Retina 2015 and UMA8 @ 11khz
+http://www.cs.tut.fi/~perezmac/video3i.avi
+http://www.cs.tut.fi/~perezmac/video2i.avi
 
-
-- video8. recorded with a MBP2010 13 and UMA8 @ 11khz
+- video2i. recorded with a MBP2010 13 and UMA8 @ 11khz
