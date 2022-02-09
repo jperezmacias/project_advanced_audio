@@ -1,0 +1,26 @@
+Data was recorded in .mov if it was with video or
+.m4a if it was only audio
+
+
+IV-2:data jose$ find ./*mov
+
+filename, 					location-gps1,	location gps2			location name		Description
+----------------------------------------------------------------------------
+calibration_beep.mov												inside room			I move around two places with the Mic.
+car_lifecam_1.mov, 			61.5066626365824,	23.81180538678223, 	TAYS bus stop 1
+car_lifecam_2.mov,  		61.5066626365824, 	23.81180538678223, 	TAYS bus stop 1
+car_macwebcam_video_2.mov	61.44976959945618, 	23.854294779618332, hervanta-bus stop
+car_macwebcam_video_3.mov	61.506101225435245, 23.81024811240406, 	TAYS bus stop 2
+
+
+
+IV-2:data jose$ find ./*m4a
+Filename								Description
+----------------------------------------------------------------------------
+./voice_moving.m4a						I say ‘aaaaaaaa’ moving around
+./test_positions_mic_check_0.m4a		checking positions sequentially
+./test_positions_mic_check_1.m4a		checking positions sequentially
+./test_positions_mic_check_2.m4a		checking positions sequentially
+./test_voice_audioUMA8.m4a				testing testing in spanish. ‘probando probando’
+./test_voice_internalcomputermic.m4a	testing the internal microphone of the laptop.
+
