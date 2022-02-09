@@ -21,7 +21,7 @@ relative_position = 25; % Relative position needed to find
 disp('File with the testing locations ')
 audiofile = 'positions2.m4a'
 
-
+load 
 [y, Fs] = audioread(audiofile);
 
 y = y/32768;
