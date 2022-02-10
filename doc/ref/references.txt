@@ -1,1 +1,14 @@
 Other References
+
+https://www.ece.ucdavis.edu/cipic/spatial-sound/
+
+https://webpages.tuni.fi/arg/index.php/research/spatial-audio
+
+Cool guy
+https://www.youtube.com/watch?v=4dqwJ_rpkPc
+http://www.robinscheibler.org/blog/
+http://www.robinscheibler.org/
+https://github.com/LCAV/pyroomacoustics/issues/139
+
+Book
+https://www.amazon.com/Sound-Capture-Processing-Practical-Approaches/dp/0470319836/ref=sr_1_1?keywords=sound+capture+and+processing&qid=1575986449&sr=8-1
