@@ -2,7 +2,10 @@
 % Jose Maria Perez-Macias Martin 2018
 
 close all, clear all
-addpath ext/srplems
+
+% Add the necessary paths
+addpath methods/method1_classical/
+addpath methods\method2_stochastic\srplems\
 addpath utils/
 
 %% Settings
@@ -14,15 +17,15 @@ elseif(strcmp(computer,'PCWIN64'))
     disp('audioread with uma8 is not working properly on windows 7 using the video')
     %     Filename = 'data\car_macwebcam_video_3.mov.mat'
     %         Filename = 'data\calibration_beep.mov.mat'
-    Filename = 'data\car_macwebcam_video_3.mov.mat'
+    Filename = 'data\car_macwebcam_video_3.mov.mat';
     load(Filename); % Loads y and fs.
     
-    Filename = 'data\car_macwebcam_video_3.mov'
+    Filename = 'data\car_macwebcam_video_3.mov';
     videoReader = VideoReader(Filename);    
     disp(Filename)
     
 elseif(isunix)
-    Filename = 'data\car_macwebcam_video_3.mov'
+    Filename = 'data\car_macwebcam_video_3.mov';
     [y, fs] = audioread(Filename);
     videoReader = VideoReader(Filename);
     
@@ -35,7 +38,7 @@ end
 usb=[30 10 1]; lsb=[1 1 1];
 % usb=[2 2 1]; lsb=[1 1 1];
 
-% Settings for SR-PHAT for modified srphat_jose1.m
+% Settings for SR-PHAT for modified srpphat_jose_modified_1.m
 ngrid = 30;%  1810              % Number of TDoA to consider
 win = 2048;                     % window size (for the spectrogram)
 sp_resolution = 0.5;            % Resolution
@@ -98,7 +101,7 @@ while hasFrame(videoReader)
     y_win = y(fix(videoReader.CurrentTime*fs):fix(videoReader.CurrentTime*fs+fs*window_to_analyze),:);
     
     % Estimate the SR-PHAT
-    [finalpos,finalsrp, R]=srpphat_jose1(y_win, mic_loc, fs, lsb, usb,ngrid, win, sp_resolution );
+    [finalpos,finalsrp, R]=srpphat_jose_modified_1(y_win, mic_loc, fs, lsb, usb,ngrid, win, sp_resolution );
     %[finalpos,finalsrp]=srpphat(y_win, mic_loc, fs, lsb, usb);
     
     if(1)

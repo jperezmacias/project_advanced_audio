@@ -1,4 +1,4 @@
-function [finalpos,finalsrp]=srpphat_jose(x, mic_loc, fs, lsb, usb,ngrid, win, sp_resolution )
+function [finalpos,finalsrp]= srpphat_jose_modified_0(x, mic_loc, fs, lsb, usb,ngrid, win, sp_resolution )
 %% This function uses SRP-PHAT
 %% Inputs:
 %%% 1) x is the multi-channel input data (samples x channels)
