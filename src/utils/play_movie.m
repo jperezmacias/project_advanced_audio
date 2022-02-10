@@ -4,7 +4,6 @@ function play_movie(F)
 % output_filename = 'string with .avi ending'
 % Example of use: save_movie(F);
 
-
 % Advanced Audio Processing
 % Jose Maria Perez-Macias 2018
 
