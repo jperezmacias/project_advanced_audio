@@ -4,17 +4,23 @@ Sound Localization
 
 ## Functions
 
--** positions.m **
-needs positons2.m4a
-plots the positions of the microphone and the test file.
+>test_positions.m
+`needs data/test_positions_mic_check_[0-2].m4a (or its matlab version).
+plots the positions of the microphone and the test file.`
+`The right positioning was found to be in test_positions_mic_check_2.m4a`
 
--** save_movie  **
+---
 
--** play_movie **
+> `demo.m stft_multi.m srphat.m belong to a github.code `
+---
+>`demo_jose adapts the code for frames.`
 
--** mic_locs = get_uma8_settings()**
+>save_movie `Saves the `
 
--** **
+>play_movie **
+
+>mic_locs = get_uma8_settings()**
+
 
 ## Libraries
 
@@ -29,13 +35,13 @@ plots the positions of the microphone and the test file.
  get_audio_video   
 
 ## Data
+described in /src/data/data_description.txt
 
+## Video results
 http://www.cs.tut.fi/~perezmac/sound_localization.html
 
+- car_macwebcam_video_3: recorded with MPP Retina 2015 and UMA8 @ 11khz
+- car_macwebcam_video_2. recorded with a MBP2010 13inch and UMA8 @ 11khz
 
-
-- video3i: recorded with MPP Retina 2015 and UMA8 @ 11khz
 http://www.cs.tut.fi/~perezmac/video3i.avi
 http://www.cs.tut.fi/~perezmac/video2i.avi
-
-- video2i. recorded with a MBP2010 13 and UMA8 @ 11khz

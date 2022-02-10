@@ -15,21 +15,20 @@ function positions()
 %%
 
 clear all, close all
-
 relative_position = 25; % Relative position needed to find 
-
 disp('File with the testing locations ')
-audiofile = 'positions2.m4a'
 
-load 
-[y, Fs] = audioread(audiofile);
+% For MacOS or Linux
+% audiofile = 'test_positions_mic_check_0.m4a'
+% [y, Fs] = audioread(audiofile);
+
+load  data\test_positions_mic_check_2.m4a.mat
 
 y = y/32768;
 
 % Plot the tracks while pushing each of the mics
 h_figure = figure;
 for i = 1 : 7
-    
     y1=y(:,i)./max(y(:,i)); % some normalization for visualization
     subplot(7,2,i+(i-1))
     plot(y1);

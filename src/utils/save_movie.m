@@ -1,4 +1,4 @@
-function save_movie(F, output_filename)
+function save_movie(F, output_filename, framerate)
 % F variable obtained with getframe, it is an structure of the shape
 % F.cdata and F.colormap
 % output_filename = 'string with .avi ending'
@@ -22,10 +22,11 @@ end
 %% Set up the movie.
 writerObj = VideoWriter(output_filename);
 
-writerObj.FrameRate = 60; % How many frames per second.
+writerObj.FrameRate = framerate; % How many frames per second.
 open(writerObj);
 
-fId= figure;
+fId = figure('Renderer', 'painters', 'Position', [10 10 400 1000]);
+
 axes('Position',[0 0 1 1])
 
 for i=1:size(F,2)

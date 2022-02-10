@@ -15,9 +15,9 @@ function [finalpos,finalsrp]=srpphat(x, mic_loc, fs, lsb, usb)
 % version 3 (http://www.gnu.org/licenses/gpl.txt)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-ngrid = 3000;   %ngrid = 1810;       % Number of TDoA to consider
-win = 2^13; %fs * 0.2;% win = 512;         % window size (for the spectrogram)
-sp_resolution= 0.5;  % In meters, spatial resolution for the searching procedure
+ngrid = 1810;       % Number of TDoA to consider
+win = 4096;         % window size (for the spectrogram)
+sp_resolution= .5;  % In meters, spatial resolution for the searching procedure
                     %                   (low value = more computational demand)
 
 %% Initialize variables:
@@ -36,7 +36,6 @@ efmax=max(mdist);
 %% Doing the GCC-PHAT:
 
 X = stft_multi(x',win);
-% freq,time, chann
 [nbin,nfram,nchan] = size(X);
 
 tau_grid = linspace(-efmax/343,efmax/343,ngrid);

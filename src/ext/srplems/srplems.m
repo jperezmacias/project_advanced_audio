@@ -47,6 +47,8 @@ np=M*(M-1)/2; %%%number of independent pairs
 
 %steplength = L/4;  %%% non-overlapped length of a frame (75% overlap)
 dftsize = L;       %%% dft size equals to frame size
+% dftsize = 2^14;       %%% dft size equals to frame size
+
 temperatureC=24.0;
 speedofsound=331.4*sqrt(1.0+(temperatureC/273));
 magiconst=10*fs/speedofsound;  
@@ -104,7 +106,12 @@ efsintp=length(xx)/2;
 row1=([0:np-1]*2*efsintp)'; 
 
 randpts=3000;  %%% J0 in SRC. Depending on the size of the search volume, choose an appropriate value here (Here, 3000 is for a V_{search}= 4m x 1m x 6m) 
+% randpts=50;  %%% J0 in SRC. Depending on the size of the search volume, choose an appropriate value here (Here, 3000 is for a V_{search}= 4m x 1m x 6m) 
+
+% 3000/(4*6) = 125;
+% randpts = (usb(1)*usb(2)*usb(3))*125
 npoints=100;   %%% Best N points. Again, choose an appropriate number according to your problem.
+% npoints=20;   %%% Best N points. Again, choose an appropriate number according to your problem.
 
 
 %%Doing SRC:

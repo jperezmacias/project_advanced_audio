@@ -10,10 +10,15 @@ Filename = 'test.mov'
 Filename = 'moving2.m4a'
 Filename = 'video2.mov'
 
+Filename = 'data\car_macwebcam_video_3.mov.mat'
+load(Filename)
+Filename = 'data\car_macwebcam_video_3.mov'
 videoReader = VideoReader(Filename);
+
+% videoReader = VideoReader(Filename);
 videoPlayer = vision.VideoPlayer;
 fps = get(videoReader, 'FrameRate');
-[y, fs] = audioread(Filename);
+% [y, fs] = audioread(Filename);
 y = y/32768;
 y=y(:,1:7);
 
@@ -26,7 +31,7 @@ loc = [ 0    0.0422    0.0211   -0.0211   -0.0422   -0.0211    0.0211;
 
 loc(:,1)=-loc(:,1)+25;
 loc(:,2)=-loc(:,2);
-usb=[50 50 5];
+usb=[20 20 5];
 lsb=[0 0 0];
 
 figure
@@ -38,7 +43,7 @@ while hasFrame(videoReader)
     currAxes.Visible = 'off';
     pause(1/videoReader.FrameRate);
     subplot(312)
-    spectrogram(y(videoReader.CurrentTime*fs:videoReader.CurrentTime*fs+fs*0.3,1),1024,512,fs)
+    spectrogram(y(videoReader.CurrentTime*fs:videoReader.CurrentTime*fs+fs*0.3,1),hamming(1024),512,4096,fs)
     
     subplot(313)
     
