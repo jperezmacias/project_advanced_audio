@@ -13,6 +13,10 @@ car_macwebcam_video_2.mov	61.44976959945618, 	23.854294779618332, hervanta-bus s
 car_macwebcam_video_3.mov	61.506101225435245, 23.81024811240406, 	TAYS bus stop 2
 
 
+- car_macwebcam_video_3: recorded with MPP Retina 2015 and UMA8 @ 11khz
+- car_macwebcam_video_2. recorded with a MBP2010 13inch and UMA8 @ 11khz
+
+
 
 IV-2:data jose$ find ./*m4a
 Filename								Description

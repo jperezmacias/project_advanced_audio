@@ -19,6 +19,7 @@ elseif(strcmp(computer,'PCWIN64'))
     %         Filename = 'data\calibration_beep.mov.mat'
     Filename = 'data\car_macwebcam_video_3.mov.mat';
     load(Filename); % Loads y and fs.
+    clear videoReader
     
     Filename = 'data\car_macwebcam_video_3.mov';
     videoReader = VideoReader(Filename);    
