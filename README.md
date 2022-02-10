@@ -1,5 +1,11 @@
+[//]: # (Title: Marketing Meeting Notes)
+[//]: # (Author: Alan Smithee)
+[//]: # (Attendees: Larry, Curly, Moe)
+[//]: # (Tags: #training #onboarding)
+[//]: # (Date: June 18, 2015)
+
 # project_audio
-Sound Localization
+Sound Localization using an UMA-8 Microphone Array
 
 
 ## Functions
