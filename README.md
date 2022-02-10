@@ -1,19 +1,24 @@
-[//]: # (Title: Marketing Meeting Notes)
-[//]: # (Author: Alan Smithee)
-[//]: # (Attendees: Larry, Curly, Moe)
-[//]: # (Tags: #training #onboarding)
+[//]: # (Title: Sound Localization using an UMA-8 Microphone Array
+)
+[//]: # (Author: Jose Maria Perez-Macias)
+[//]: # (Tags: #sourcelocalization #spatialaudio #soundsourcelocalization #3Daudio)
 [//]: # (Date: June 18, 2015)
 
 # project_audio
-Sound Localization using an UMA-8 Microphone Array
+Sound source Localization using an eigthicrophone Array
 
 
 ## Functions
 
->test_positions.m
+>test_positions.m \
 `needs data/test_positions_mic_check_[0-2].m4a (or its matlab version).
 plots the positions of the microphone and the test file.`
 `The right positioning was found to be in test_positions_mic_check_2.m4a`
+
+
+!['Microphone positions test','title'](doc/img/microphone_positions.png)
+> 
+> 
 
 ---
 

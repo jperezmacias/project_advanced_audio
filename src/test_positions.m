@@ -1,4 +1,4 @@
-function positions()
+function test_positions()
 % Position testing.
 % The microphone was tested using the order of the names in the board of
 % the UMA-8.
@@ -68,6 +68,8 @@ y0=10;
 width=400;
 height=810;
 set(gcf,'units','points','position',[x0,y0,width,height])
+
+imsave(h_figure, '-djpeg100', '../doc/img/microphone_positions.jpg', '-r0');
 
 
 % 1 1
