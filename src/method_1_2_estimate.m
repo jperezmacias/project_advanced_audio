@@ -148,9 +148,9 @@ while hasFrame(videoReader)
 end
 
 date_string = datestr(now,30);
-outfile = ['data',filesep,'restuls',filesep,'test_',datestring,'_','.avi'];
+outfile = ['data',filesep,'results',filesep,'test_',date_string,'_','.avi'];
 movie_save_framerate = 30;
-save_movie(F,outfile, movie_save_framerate);
+save_movie(F , outfile, movie_save_framerate);
 
 
 
