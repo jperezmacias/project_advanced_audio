@@ -4,4 +4,6 @@
 *.asv
 *.zip
 *.avi
-*DS_Store
+**/*.DS_Store
+*.docx
+*.pdf
